@@ -20,7 +20,7 @@ export default function Home() {
       {/* NAV */}
       <nav style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(250,250,247,0.92)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border)' }}>
         <div className="nav-inner" style={{ maxWidth: '1120px', margin: '0 auto', padding: '0 48px', height: '64px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ ...display, fontSize: '1.25rem', letterSpacing: '0.06em', color: 'var(--ink)' }}>CANVASS</span>
+          <span style={{ ...display, fontSize: '1.25rem', letterSpacing: '0.06em', color: 'var(--ink)' }}>PASSERBY</span>
           <a href="#waitlist" className="btn-outline">Join waitlist</a>
         </div>
       </nav>
@@ -232,10 +232,10 @@ export default function Home() {
       <footer style={{ borderTop: '1px solid var(--border)' }}>
         <div className="footer-inner" style={{ maxWidth: '1120px', margin: '0 auto', padding: '24px 48px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <span style={{ ...display, fontSize: '1.1rem', letterSpacing: '0.06em', color: 'var(--ink)' }}>CANVASS</span>
+            <span style={{ ...display, fontSize: '1.1rem', letterSpacing: '0.06em', color: 'var(--ink)' }}>PASSERBY</span>
             <span style={{ ...w(300), fontSize: '0.78rem', color: 'var(--ink-3)' }}>Know before you post.</span>
           </div>
-          <span style={{ ...w(300), fontSize: '0.74rem', color: 'var(--ink-4)' }}>© 2025 Canvass. All rights reserved.</span>
+          <span style={{ ...w(300), fontSize: '0.74rem', color: 'var(--ink-4)' }}>© 2025 Passerby. All rights reserved.</span>
         </div>
       </footer>
     </div>

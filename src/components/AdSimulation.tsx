@@ -172,7 +172,7 @@ export default function AdSimulation() {
             </div>
           ))}
         </div>
-        <span className="sim-demo-label" style={{ fontSize: '0.64rem', color: 'var(--ink-3)', fontFamily: 'var(--font-body)', fontWeight: 300, flexShrink: 0 }}>canvass demo</span>
+        <span className="sim-demo-label" style={{ fontSize: '0.64rem', color: 'var(--ink-3)', fontFamily: 'var(--font-body)', fontWeight: 300, flexShrink: 0 }}>passerby demo</span>
       </div>
 
       {/* ── AD PREVIEW ROW ── */}
