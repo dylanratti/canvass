@@ -152,7 +152,7 @@ export default function AdSimulation() {
     <div style={{ background: 'var(--white)', border: '1px solid var(--border)', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(26,25,22,0.08)', width: '100%', opacity: fading ? 0 : 1, transition: 'opacity 0.4s ease' }}>
 
       {/* ── CHROME BAR ── */}
-      <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--border)', background: 'var(--cream)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
+      <div style={{ padding: '12px 16px', borderBottom: '1px solid var(--border)', background: 'var(--cream)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
         <div style={{ display: 'flex', gap: '6px', flexShrink: 0 }}>
           {['#FF5F57','#FEBC2E','#28C840'].map((c, i) => <div key={i} style={{ width: '9px', height: '9px', borderRadius: '50%', background: c }} />)}
         </div>
@@ -166,17 +166,17 @@ export default function AdSimulation() {
                     ? <svg width="7" height="7" viewBox="0 0 7 7" fill="none"><path d="M1 3.5l1.8 1.8 3-3" stroke="white" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     : <div style={{ width: '4px', height: '4px', borderRadius: '50%', background: i === stepIdx ? '#fff' : 'var(--ink-4)' }} />}
                 </div>
-                <span style={{ fontSize: '0.68rem', fontWeight: 500, fontFamily: 'var(--font-body)', color: i === stepIdx ? '#fff' : i < stepIdx ? 'var(--ink)' : 'var(--ink-4)', whiteSpace: 'nowrap', transition: 'color 0.3s' }}>{s}</span>
+                <span className="step-label" style={{ fontSize: '0.68rem', fontWeight: 500, fontFamily: 'var(--font-body)', color: i === stepIdx ? '#fff' : i < stepIdx ? 'var(--ink)' : 'var(--ink-4)', whiteSpace: 'nowrap', transition: 'color 0.3s' }}>{s}</span>
               </div>
               {i < steps.length - 1 && <div style={{ width: '16px', height: '1px', background: i < stepIdx ? 'var(--ink-4)' : 'var(--border)', flexShrink: 0 }} />}
             </div>
           ))}
         </div>
-        <span style={{ fontSize: '0.64rem', color: 'var(--ink-3)', fontFamily: 'var(--font-body)', fontWeight: 300, flexShrink: 0 }}>canvass demo</span>
+        <span className="sim-demo-label" style={{ fontSize: '0.64rem', color: 'var(--ink-3)', fontFamily: 'var(--font-body)', fontWeight: 300, flexShrink: 0 }}>canvass demo</span>
       </div>
 
       {/* ── AD PREVIEW ROW ── */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '1px solid var(--border)' }}>
+      <div className="sim-billboard-score" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '1px solid var(--border)' }}>
 
         {/* Billboard street scene */}
         <div style={{ borderRight: '1px solid var(--border)', position: 'relative', overflow: 'hidden', background: '#D6E4F0' }}>
